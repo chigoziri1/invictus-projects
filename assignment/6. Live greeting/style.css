@@ -1,0 +1,30 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(42, 151, 42);
+	padding: 1rem;
+
+	input{
+		outline: none;
+		border: none;
+		padding: 0 3px;
+		width: 14rem;
+		height: 2rem;
+		margin-bottom: 20px;
+	}
+
+	p{
+		margin-bottom: 20px;
+		color: white;
+		font-family: arial;
+		
+	}
+}

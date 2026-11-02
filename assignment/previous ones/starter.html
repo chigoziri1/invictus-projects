@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flexbox Card</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			height: 100vh;
+		}
+
+		.card-container{
+			display: flex;
+			justify-content: center;
+			gap: 0.4rem;
+			margin-top: 80px;
+		}
+
+		.card{
+			height: 150px;
+			width: 25%;
+			background-color: green;
+		}
+
+		@media (max-width: 560px) {
+			.card-container{
+			display: flex;
+			/* flex-direction: column; */
+			flex-wrap: wrap; 
+			align-items: center;
+			padding: 0.2rem;
+			transition: all 300ms;
+		}
+
+		.card{
+			width: 59%;
+		}
+		}
+
+		.gallery{
+			display: flex;
+			gap: 0.2rem;
+			padding: 0.2rem;
+		}
+
+		.photo{
+			height: 200px;
+			width: 25%;
+			background-color: brown;
+			color: white;
+			font-size: larger;
+			/* text-align: center; */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.photo:nth-child(1) {
+			order: 2;
+		}
+
+		.photo:nth-child(2) {
+			order: 4;
+		}
+
+		.photo:nth-child(3) {
+			order: 1;
+		}
+
+		.photo:nth-child(4) {
+			order: 3;
+		}
+
+		.hero{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center; 
+			position: relative;
+			height: 300px;
+			background-color: chocolate;
+			margin: 10px 2px;
+			padding: 1rem;
+			gap: 1rem;
+		}
+
+		.h3-div{
+			font-family:Verdana, Geneva, Tahoma, sans-serif;
+		}
+
+		/* .hero h3{
+			display: block;
+		} */
+
+		.hero button{
+			padding: 0.7rem 2rem;
+			cursor: pointer;
+			border: none;
+			transition: all ease 100ms;
+		} 
+
+		.hero button:hover{
+			background-color: antiquewhite;
+		}
+
+		nav{
+			display: flex;
+			position: fixed;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 100; 
+			background-color: gray;
+			/* height: 4rem; */
+			padding: 8px;
+			right: 0;
+			left: 0;
+			top: 0;
+			/* bottom: 5rem; */
+		}
+
+		img{
+			height: 40px;
+			border-radius: 50%;
+			width: 40px;
+			/* object-fit: fill; */
+		}
+
+		.pricing-container{
+			display: flex;
+			flex: 1;
+			align-items: stretch;
+			justify-content: center;
+			gap: 10px;
+			padding: 1rem;
+			box-sizing: border-box;
+		}
+
+		.plan{
+			background-color: rgb(25, 61, 61);
+			height: 200px;
+			border: 6px solid black;
+			width: 20%;
+			padding: 1rem;
+		}
+
+		.featured{
+			display: flex;
+			/* flex-grow: 1; */
+			flex: 1.5;
+			width: 35%;
+			border: 7px solid purple;
+		}
+
+		.page-layout{
+			background-color: cadetblue;
+			display: flex;
+			height: 200px;
+			padding: 0.5rem;
+		}
+
+		.sidebar{
+			background-color: chartreuse;
+			width: 200px;
+			text-align: center;
+			font-size: 25px;
+		}
+
+		.main{
+			display: flex;
+			flex: 1;
+			background-color: coral;
+			justify-content: center;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+
+		<div class="logo">
+			<img class="amazon" src="download (1).png" alt="amazon logo">
+		</div>
+
+		<div class="links">
+			<a href="">Home</a>
+			<a href="">About</a>
+			<a href="">Menu</a>
+			<a href="">Contact</a>
+			<a href="https://www.google.com" target="_blank">Google</a>
+		</div>
+		
+	</nav>
+
+	<div class="card-container">
+		<div class="card card-child1"></div>
+		<div class="card card-child3"></div>
+		<div class="card card-child2"></div>
+	</div>
+
+	<div class="hero">
+		<div class="h3-div">
+			<h3>I don't understand</h3>
+		</div>
+		<div class="button-div">
+			<button>Ok</button>
+		</div>
+	</div>
+
+	<div class="page-layout">
+		<div class="sidebar">The sidebar</div>
+		<div class="main">Main</div>
+	</div>
+
+	<div class="pricing-container">
+		<div class="plan plan1"></div>
+		<div class="plan featured"></div>
+		<div class="plan plan3"></div>
+	</div>
+
+	<div class="gallery">
+		<div class="photo photoA">A</div>
+		<div class="photo PhotoB">B</div>
+		<div class="photo photoC">C</div>
+		<div class="photo photoD">D</div>
+	</div>
+
+</body>
+</html>

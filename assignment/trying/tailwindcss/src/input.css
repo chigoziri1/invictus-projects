@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-div{
+	background-image: url(/download\ \(3\).jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: ;
+}

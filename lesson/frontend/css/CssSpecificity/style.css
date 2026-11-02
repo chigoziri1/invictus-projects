@@ -1,0 +1,38 @@
+/* Specificity: Is order of which selector compiler chooses */
+
+/* same selector: Compiler resolves by using last rule, so the element will be yellow */
+/* .box{
+	background-color: blue;
+	height: 300px;
+	width: 200px;
+}
+
+.child{
+	background-color: yellow;
+} */
+
+/* Tag Vs Class: Compiler resolves this by choosing class because class has more precedence than tag so compiler picks blue */
+
+/* .box{
+	background-color: blue;
+}
+
+div{
+	background-color: red;
+	height: 200px;
+	width: 200px;
+	margin-top: 20px;
+} */
+
+/* Class Vs Id: Compiler resolves by choosing id because id has more precedence than class. so compiler picks red */
+
+/* #bbw{
+	background-color: red;
+	height: 200px;
+	width: 200px;
+	margin-top: 20px;
+} 
+
+.box{
+	background-color: blue;
+} */

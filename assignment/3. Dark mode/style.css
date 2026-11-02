@@ -1,0 +1,41 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	padding: 1rem;
+}
+
+.dark{
+	
+}
+
+div{
+	background-color: #ff43;
+	padding: 1rem;
+}
+
+h3{
+	margin: 20px 0;
+}
+
+p{
+	margin: 10px 0;
+}
+
+button{
+	padding: 0.5rem 1rem;	
+	cursor: pointer;
+	transition: all ease-in-out 50ms;
+}
+
+button:hover{
+	background-color: #ff43;
+	border: 2px solid black;
+}
+
+button:active{
+	opacity: 0.1%;
+}

@@ -1,0 +1,15 @@
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	div{
+		padding: 1rem;
+
+		button{
+			padding: 0.4rem 1rem;
+			background-color: azure;
+			cursor: pointer;
+		}
+	}
+}

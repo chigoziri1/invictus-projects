@@ -1,0 +1,78 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	padding: 1rem;
+	background: linear-gradient(to left, yellow, darkgreen);
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+}
+
+input{
+	padding: 1rem;
+	margin-bottom: 20px;
+	border: none;
+	outline: none;
+	border-radius: 25px;
+}
+
+.check,
+.clear{
+	padding: 0.3rem;
+	border: none;
+	outline: none;
+	border-radius: 25px;
+	cursor: pointer;
+	color: black;
+	&&:hover{
+		background: linear-gradient(to left, darkgreen, gold);
+		color: white;
+	}
+}
+
+.listcon{
+ display: flex;
+ flex-wrap: wrap;	
+ border: 3px solid white;
+ align-items: center;
+ justify-content: center;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ padding: 1rem;
+ /* width: 100%; */
+ gap: 1rem;
+
+ .info{
+	font-weight: bold;
+	color: white;
+ }
+}
+
+.num{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1.3rem;
+}
+
+.even{
+	background-color: green;
+}
+ 
+.odd{
+	background-color: red;
+	color: white;
+}
+
+.hide {
+	display: none;
+}

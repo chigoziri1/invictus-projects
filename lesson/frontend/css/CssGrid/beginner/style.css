@@ -1,0 +1,30 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: linear-gradient(lightblue,blue);
+	min-height: 100vh;
+}
+
+.box{
+	padding: 1rem;
+	border: 3px solid red;
+	display: grid;
+	place-items: center;
+	color: white;
+	border-radius: 5px;
+}
+
+.beginner{
+	/* border: 3px solid yellow; */
+	padding: 1rem;
+	width: 90vw;
+	margin: 20px auto;
+	min-width: 90vh;
+	display: grid;
+	gap: 10px;
+	grid-template-rows: auto 1fr auto;
+}

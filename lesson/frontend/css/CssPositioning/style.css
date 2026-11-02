@@ -1,0 +1,44 @@
+.statice{
+	/* position: static; */
+	background-color: red;
+	right: 60px;
+}
+
+.relativee{
+	/* position: relative; */
+	background-color: blueviolet;
+	right: 40px;
+	/* 1. Moves from their initial position */
+	/* 2. They are not completely removed from the flow of document */
+}
+
+.absolutee{
+	/* position: absolute; */
+	background-color: yellow;
+	right: 40px;
+	/* 1. Completely removed from the flow of document */
+	/* 2. It does not move from initial position. It moves from the position it is given */
+	/* 3. It stays absolutely positioned inside any parent that has any position that is not static */
+}
+
+.box{
+	height: 60px;
+	width: 60px;
+}
+
+.fixedee{
+	/* position: fixed; */
+	background-color: gray;
+	/* 1. Does not stay positioned inside any parent. It uses the document */
+	/* top: 0;
+	left: 0;
+	width: 100%; */
+}
+
+.stickyy{
+	/* position: sticky; */
+	background-color: pink;
+	top: 0;
+	/* left: 20rem; */
+	width: 100%;
+}

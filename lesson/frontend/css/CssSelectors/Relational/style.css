@@ -1,0 +1,12 @@
+.parent .child {
+	background-color: blue;
+	height: 150px;
+	width: 150px;
+	margin-top: 1rem;
+}
+
+.parent .child .grandchild {
+	background-color: red;
+}
+
+/* **Relational selectors */
